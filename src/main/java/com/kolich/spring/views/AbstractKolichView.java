@@ -36,13 +36,14 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.view.AbstractView;
 
 public abstract class AbstractKolichView extends AbstractView {
 	
 	private static final Logger logger__ = 
-		Logger.getLogger(AbstractKolichView.class);
+		LoggerFactory.getLogger(AbstractKolichView.class);
 	
 	public static final String VIEW_PAYLOAD = "payload";
 			
@@ -90,7 +91,7 @@ public abstract class AbstractKolichView extends AbstractView {
 			myPrepareResponse(payload, request, response);
 			myRenderMergedOutputModel(payload, request, response);
 		} catch(Exception e) {
-			logger__.error(e);
+			logger__.error("Failed to render merged output model.", e);
 			throw e;
 		}
 	}

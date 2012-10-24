@@ -39,7 +39,8 @@ import java.util.regex.Pattern;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -49,7 +50,7 @@ public final class RequestPathInterceptor extends HandlerInterceptorAdapter
 	implements InitializingBean {
 
 	private static final Logger logger__ = 
-		Logger.getLogger(RequestPathInterceptor.class);
+		LoggerFactory.getLogger(RequestPathInterceptor.class);
 	
 	private List<String> requestMappings_ = new ArrayList<String>();	
 	private List<PathMapping> mappings_ = new ArrayList<PathMapping>();

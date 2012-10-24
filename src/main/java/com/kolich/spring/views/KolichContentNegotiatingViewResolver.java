@@ -29,7 +29,8 @@ package com.kolich.spring.views;
 import java.util.List;
 import java.util.Locale;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
@@ -53,7 +54,7 @@ public final class KolichContentNegotiatingViewResolver
 	extends ContentNegotiatingViewResolver {
 
 	private static final Logger logger__ = 
-		Logger.getLogger(KolichContentNegotiatingViewResolver.class);
+		LoggerFactory.getLogger(KolichContentNegotiatingViewResolver.class);
 	
 	/**
 	 * All error views, like 404 Not Found, etc. have a view name

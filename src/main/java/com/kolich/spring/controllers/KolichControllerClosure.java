@@ -29,7 +29,7 @@ package com.kolich.spring.controllers;
 import static com.kolich.spring.views.AbstractKolichView.VIEW_PAYLOAD;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
