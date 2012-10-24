@@ -41,10 +41,10 @@ object Dependencies {
   private val slf4j = "org.slf4j" % "slf4j-api" % "1.6.6" % "compile"
   private val slf4jLog4j = "org.slf4j" % "slf4j-log4j12" % "1.6.6" % "compile"
 
-  private val jstl = "jstl" % "jstl" % "1.2" % "compile"
-  private val jspApi = "javax.servlet" % "jsp-api" % "2.0" % "compile"
-
-  private val servlet = "javax.servlet" % "servlet-api" % "2.5" % "compile"
+  private val jspApi = "javax.servlet.jsp" % "jsp-api" % "2.2" % "provided"
+  private val jstl = "jstl" % "jstl" % "1.2" % "provided"
+  private val servlet = "org.glassfish" % "javax.servlet" % "3.0" % "provided"
+  private val javaEEWebApi = "javax" % "javaee-web-api" % "6.0" % "provided" 
 
   private val springWeb = "org.springframework" % "spring-web" % "3.1.2.RELEASE" % "compile"
   private val springMvc = "org.springframework" % "spring-webmvc" % "3.1.2.RELEASE" % "compile"
@@ -56,8 +56,7 @@ object Dependencies {
     kolichCommon,
     // External.
     log4j, slf4j, slf4jLog4j,
-    jstl, jspApi,
-    servlet,
+    jspApi, jstl, servlet, javaEEWebApi,
     springWeb, springMvc,
     commonsIo)
 
@@ -85,7 +84,7 @@ object Spring extends Build {
   */
 
   private val aName = "kolich-spring"
-  private val aVer = "0.0.2"
+  private val aVer = "0.0.3"
   private val aOrg = "com.kolich"
 
   lazy val spring: Project = Project(
