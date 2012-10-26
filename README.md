@@ -46,10 +46,11 @@ Run SBT from within kolich-spring.
     #~> cd kolich-spring
     #~/kolich-spring> sbt
     ...
+    kolich-spring:0.0.3.1>
 
-You will see an SBT prompt once all dependencies are resolved and the project is loaded.
+You will see a `kolich-spring` SBT prompt once all dependencies are resolved and the project is loaded.
 
-Run `package` to compile and package the JAR via SBT.
+In SBT, run `package` to compile and package the JAR.
 
     kolich-spring:0.0.3.1> package
     [info] Compiling 17 Java sources to ~/kolich-spring/target/classes...
@@ -59,16 +60,16 @@ Run `package` to compile and package the JAR via SBT.
 
 Note the resulting JAR is placed into the **kolich-spring/dist** directory.
 
-To create an Eclipse Java project for kolich-spring, run `eclipse` from your SBT prompt.
+To create an Eclipse Java project for kolich-spring, run `eclipse` in SBT.
 
     kolich-spring:0.0.3.1> eclipse
     ...
     [info] Successfully created Eclipse project files for project(s):
     [info] kolich-spring
 
-You'll now have a real .project file worthy of an Eclipse import.
+You'll now have a real Eclipse **.project** file worthy of an Eclipse import.
 
-Note your new .classpath file as well -- all source JAR's are fetched and injected into the Eclipse project automatically.
+Note your new **.classpath** file as well -- all source JAR's are fetched and injected into the Eclipse project automatically.
 
 ## Dependencies
 
