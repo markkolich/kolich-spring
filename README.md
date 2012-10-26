@@ -8,7 +8,7 @@ It is built around Spring 3.1.2, and does not currently support older versions o
 
 The latest stable version of this library is <a href="http://markkolich.github.com/repo/com/kolich/kolich-spring/0.0.3.1">0.0.3.1</a>.
 
-## Resolvers for SBT/Maven
+## Resolvers
 
 If you wish to use this artifact, you can easily add it to your existing Maven or SBT project using <a href="http://markkolich.github.com/repo">my GitHub hosted Maven2 repository</a>.
 
