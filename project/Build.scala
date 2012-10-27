@@ -33,7 +33,7 @@ object Dependencies {
 
   // Internal dependencies
 
-  private val kolichCommon = "com.kolich" % "kolich-common" % "0.0.3" % "compile"
+  private val kolichCommon = "com.kolich" % "kolich-common" % "0.0.3.1" % "compile"
 
   // External dependencies
 
