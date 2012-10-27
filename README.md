@@ -10,12 +10,14 @@ The latest stable version of this library is <a href="http://markkolich.github.c
 
 ## Resolvers
 
-If you wish to use this artifact, you can easily add it to your existing Maven or SBT project using <a href="http://markkolich.github.com/repo">my GitHub hosted Maven2 repository</a>.
+If you wish to use this artifact, you can easily add it to your existing Maven or SBT project using <a href="https://github.com/markkolich/markkolich.github.com#marks-maven2-repository">my GitHub hosted Maven2 repository</a>.
 
 ### SBT
 
 ```scala
 resolvers += "Kolich repo" at "http://markkolich.github.com/repo"
+
+val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.3.1" % "compile"
 ```
 
 ### Maven
@@ -27,6 +29,13 @@ resolvers += "Kolich repo" at "http://markkolich.github.com/repo"
   <url>http://markkolich.github.com/repo/</url>
   <layout>default</layout>
 </repository>
+
+<dependency>
+  <groupId>com.kolich</groupId>
+  <artifactId>kolich-spring</artifactId>
+  <version>0.0.3.1</version>
+  <scope>compile</scope>
+</dependency>
 ```
 
 ## Building
