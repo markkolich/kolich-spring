@@ -40,9 +40,9 @@ val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.3.1" % "compile"
 
 ## Building
 
-This Java library and its dependencies are built and managed using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a>.
+This Java library and its dependencies are built and managed using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a> **0.12.1**.
 
-To clone and build kolich-spring, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT installed and configured on your computer</a>.
+To clone and build kolich-spring, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT 0.12.1 installed and configured on your computer</a>.
 
 The kolich-spring SBT <a href="https://github.com/markkolich/kolich-spring/blob/master/project/Build.scala">Build.scala</a> file is highly customized to build and package this Java artifact.  It's written to manage all dependencies and versioning.
 
