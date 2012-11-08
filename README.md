@@ -2,7 +2,7 @@
 
 This Java library is a common set of classes that I frequently use to build complex <a href="http://www.springsource.org/">Spring 3</a> web-applications.
 
-It is built around Spring 3.1.2, and does not currently support older versions of Spring.
+It is built around Spring 3.1.3.RELEASE, and does not currently support older versions of Spring.
 
 ## Latest Version
 
@@ -82,7 +82,7 @@ Note your new **.classpath** file as well -- all source JAR's are fetched and in
 
 ## Dependencies
 
-Naturally, this artifact depends on spring-web 3.1.2.RELEASE, and spring-webmvc 3.1.2.RELEASE.
+Naturally, this artifact depends on spring-web 3.1.3.RELEASE, and spring-webmvc 3.1.3.RELEASE.
 
 It also firmly depends on my common package of utility classes, <a href="https://github.com/markkolich/kolich-common">kolich-common</a>.
 
