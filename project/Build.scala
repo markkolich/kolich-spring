@@ -44,8 +44,8 @@ object Dependencies {
   private val servlet = "org.glassfish" % "javax.servlet" % "3.0" % "provided"
   private val javaEEWebApi = "javax" % "javaee-web-api" % "6.0" % "provided" 
 
-  private val springWeb = "org.springframework" % "spring-web" % "3.1.2.RELEASE" % "compile"
-  private val springMvc = "org.springframework" % "spring-webmvc" % "3.1.2.RELEASE" % "compile"
+  private val springWeb = "org.springframework" % "spring-web" % "3.1.3.RELEASE" % "compile"
+  private val springMvc = "org.springframework" % "spring-webmvc" % "3.1.3.RELEASE" % "compile"
 
   private val commonsIo = "commons-io" % "commons-io" % "2.4" % "compile"
 
@@ -82,7 +82,7 @@ object Spring extends Build {
   */
 
   private val aName = "kolich-spring"
-  private val aVer = "0.0.3.1"
+  private val aVer = "0.0.3.2"
   private val aOrg = "com.kolich"
 
   lazy val spring: Project = Project(
