@@ -33,7 +33,7 @@ object Dependencies {
 
   // Internal dependencies
 
-  private val kolichCommon = "com.kolich" % "kolich-common" % "0.0.3.2" % "compile"
+  private val kolichCommon = "com.kolich" % "kolich-common" % "0.0.4" % "compile"
 
   // External dependencies
 
@@ -82,7 +82,7 @@ object Spring extends Build {
   */
 
   private val aName = "kolich-spring"
-  private val aVer = "0.0.3.3"
+  private val aVer = "0.0.4"
   private val aOrg = "com.kolich"
 
   lazy val spring: Project = Project(

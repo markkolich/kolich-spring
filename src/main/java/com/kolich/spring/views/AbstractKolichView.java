@@ -26,9 +26,9 @@
 
 package com.kolich.spring.views;
 
-import static org.apache.http.HttpHeaders.CACHE_CONTROL;
-import static org.apache.http.HttpHeaders.EXPIRES;
-import static org.apache.http.HttpHeaders.PRAGMA;
+import static com.google.common.net.HttpHeaders.CACHE_CONTROL;
+import static com.google.common.net.HttpHeaders.EXPIRES;
+import static com.google.common.net.HttpHeaders.PRAGMA;
 
 import java.util.Date;
 import java.util.Map;
@@ -49,7 +49,7 @@ public abstract class AbstractKolichView extends AbstractView {
 			
 	private static final String PRAGMA_NO_CACHE = "no-cache";
 	private static final String CACHE_CONTROL_NO_CACHE =
-		"no-cache, no-store, max-age=0";
+		"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";
 					
 	public AbstractKolichView(String contentType) {
 		setContentType(contentType);
