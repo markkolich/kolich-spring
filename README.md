@@ -78,7 +78,7 @@ To create an Eclipse Java project for kolich-spring, run `eclipse` in SBT.
 
 You'll now have a real Eclipse **.project** file worthy of an Eclipse import.
 
-Note your new **.classpath** file as well -- all source JAR's are fetched and injected into the Eclipse project automatically.
+Note your new **.classpath** file as well &mdash; all source JAR's are fetched and injected into the Eclipse project automatically.
 
 ## Dependencies
 
