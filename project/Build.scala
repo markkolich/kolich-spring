@@ -82,7 +82,7 @@ object Spring extends Build {
   */
 
   private val aName = "kolich-spring"
-  private val aVer = "0.0.4"
+  private val aVer = "0.0.5"
   private val aOrg = "com.kolich"
 
   lazy val spring: Project = Project(
