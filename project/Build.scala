@@ -39,9 +39,6 @@ object Dependencies {
 
   private val slf4j = "org.slf4j" % "slf4j-api" % "1.7.2" % "compile"
 
-  private val jspApi = "javax.servlet.jsp" % "jsp-api" % "2.2" % "provided"
-  private val jstl = "jstl" % "jstl" % "1.2" % "provided"
-  private val servlet = "org.glassfish" % "javax.servlet" % "3.0" % "provided"
   private val javaEEWebApi = "javax" % "javaee-web-api" % "6.0" % "provided" 
 
   private val springWeb = "org.springframework" % "spring-web" % "3.1.3.RELEASE" % "compile"
@@ -54,7 +51,7 @@ object Dependencies {
     kolichCommon,
     // External.
     slf4j,
-    jspApi, jstl, servlet, javaEEWebApi,
+    javaEEWebApi,
     springWeb, springMvc,
     commonsIo)
 
