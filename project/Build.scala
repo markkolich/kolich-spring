@@ -39,7 +39,8 @@ object Dependencies {
 
   private val slf4j = "org.slf4j" % "slf4j-api" % "1.7.2" % "compile"
 
-  private val javaEEWebApi = "javax" % "javaee-web-api" % "6.0" % "provided" 
+  private val servletApi = "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided" // Provided by container
+  private val jspApi = "javax.servlet.jsp" % "jsp-api" % "2.2" % "provided" // Provided by container
 
   private val springWeb = "org.springframework" % "spring-web" % "3.1.3.RELEASE" % "compile"
   private val springMvc = "org.springframework" % "spring-webmvc" % "3.1.3.RELEASE" % "compile"
@@ -51,7 +52,7 @@ object Dependencies {
     kolichCommon,
     // External.
     slf4j,
-    javaEEWebApi,
+    servletApi, jspApi,
     springWeb, springMvc,
     commonsIo)
 
@@ -79,7 +80,7 @@ object Spring extends Build {
   */
 
   private val aName = "kolich-spring"
-  private val aVer = "0.0.5"
+  private val aVer = "0.0.6"
   private val aOrg = "com.kolich"
 
   lazy val spring: Project = Project(

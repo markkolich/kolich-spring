@@ -6,7 +6,7 @@ It is built around Spring 3.1.3.RELEASE, and does not currently support older ve
 
 ## Latest Version
 
-The latest stable version of this library is <a href="http://markkolich.github.com/repo/com/kolich/kolich-spring/0.0.5">0.0.5</a>.
+The latest stable version of this library is <a href="http://markkolich.github.com/repo/com/kolich/kolich-spring/0.0.6">0.0.6</a>.
 
 ## Resolvers
 
@@ -17,7 +17,7 @@ If you wish to use this artifact, you can easily add it to your existing Maven o
 ```scala
 resolvers += "Kolich repo" at "http://markkolich.github.com/repo"
 
-val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.5" % "compile"
+val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.6" % "compile"
 ```
 
 ### Maven
@@ -33,7 +33,7 @@ val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.5" % "compile"
 <dependency>
   <groupId>com.kolich</groupId>
   <artifactId>kolich-spring</artifactId>
-  <version>0.0.5</version>
+  <version>0.0.6</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -55,15 +55,15 @@ Run SBT from within kolich-spring.
     #~> cd kolich-spring
     #~/kolich-spring> sbt
     ...
-    kolich-spring:0.0.5>
+    kolich-spring:0.0.6>
 
 You will see a `kolich-spring` SBT prompt once all dependencies are resolved and the project is loaded.
 
 In SBT, run `package` to compile and package the JAR.
 
-    kolich-spring:0.0.5> package
+    kolich-spring:0.0.6> package
     [info] Compiling 17 Java sources to ~/kolich-spring/target/classes...
-    [info] Packaging ~/kolich-spring/dist/kolich-spring-0.0.5.jar ...
+    [info] Packaging ~/kolich-spring/dist/kolich-spring-0.0.6.jar ...
     [info] Done packaging.
     [success] Total time: 4 s, completed
 
@@ -71,7 +71,7 @@ Note the resulting JAR is placed into the **kolich-spring/dist** directory.
 
 To create an Eclipse Java project for kolich-spring, run `eclipse` in SBT.
 
-    kolich-spring:0.0.5> eclipse
+    kolich-spring:0.0.6> eclipse
     ...
     [info] Successfully created Eclipse project files for project(s):
     [info] kolich-spring
