@@ -2,11 +2,11 @@
 
 This Java library is a common set of classes that I frequently use to build complex <a href="http://www.springsource.org/">Spring 3</a> web-applications.
 
-It is built around Spring 3.1.3.RELEASE, and does not currently support older versions of Spring.
+It is built around Spring 3.2.6.RELEASE, and does not currently support older versions of Spring.
 
 ## Latest Version
 
-The latest stable version of this library is <a href="http://markkolich.github.com/repo/com/kolich/kolich-spring/0.0.6">0.0.6</a>.
+The latest stable version of this library is <a href="http://markkolich.github.com/repo/com/kolich/kolich-spring/0.0.8">0.0.8</a>.
 
 ## Resolvers
 
@@ -17,7 +17,7 @@ If you wish to use this artifact, you can easily add it to your existing Maven o
 ```scala
 resolvers += "Kolich repo" at "http://markkolich.github.com/repo"
 
-val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.6" % "compile"
+val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.8" % "compile"
 ```
 
 ### Maven
@@ -33,16 +33,16 @@ val kolichSpring = "com.kolich" % "kolich-spring" % "0.0.6" % "compile"
 <dependency>
   <groupId>com.kolich</groupId>
   <artifactId>kolich-spring</artifactId>
-  <version>0.0.6</version>
+  <version>0.0.8</version>
   <scope>compile</scope>
 </dependency>
 ```
 
 ## Building
 
-This Java library and its dependencies are built and managed using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a> **0.12.1**.
+This Java library and its dependencies are built and managed using <a href="https://github.com/harrah/xsbt">SBT (the Simple Build Tool)</a> **0.13.0**.
 
-To clone and build kolich-spring, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT 0.12.1 installed and configured on your computer</a>.
+To clone and build kolich-spring, you must have <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup">SBT installed and configured on your computer</a>.
 
 The kolich-spring SBT <a href="https://github.com/markkolich/kolich-spring/blob/master/project/Build.scala">Build.scala</a> file is highly customized to build and package this Java artifact.  It's written to manage all dependencies and versioning.
 
@@ -69,20 +69,9 @@ In SBT, run `package` to compile and package the JAR.
 
 Note the resulting JAR is placed into the **kolich-spring/dist** directory.
 
-To create an Eclipse Java project for kolich-spring, run `eclipse` in SBT.
-
-    kolich-spring:0.0.6> eclipse
-    ...
-    [info] Successfully created Eclipse project files for project(s):
-    [info] kolich-spring
-
-You'll now have a real Eclipse **.project** file worthy of an Eclipse import.
-
-Note your new **.classpath** file as well &mdash; all source JAR's are fetched and injected into the Eclipse project automatically.
-
 ## Dependencies
 
-Naturally, this artifact depends on spring-web 3.1.3.RELEASE, and spring-webmvc 3.1.3.RELEASE.
+Naturally, this artifact depends on spring-web 3.2.6.RELEASE, and spring-webmvc 3.2.6.RELEASE.
 
 It also firmly depends on my common package of utility classes, <a href="https://github.com/markkolich/kolich-common">kolich-common</a>.
 
