@@ -27,13 +27,11 @@
 import sbt._
 import sbt.Keys._
 
-import com.typesafe.sbteclipse.plugin.EclipsePlugin._
-
 object Dependencies {
 
   // Internal dependencies
 
-  private val kolichCommon = "com.kolich" % "kolich-common" % "0.0.4" % "compile"
+  private val kolichCommon = "com.kolich" % "kolich-common" % "0.1.0" % "compile"
 
   // External dependencies
 
@@ -42,8 +40,8 @@ object Dependencies {
   private val servletApi = "javax.servlet" % "javax.servlet-api" % "3.0.1" % "provided" // Provided by container
   private val jspApi = "javax.servlet.jsp" % "jsp-api" % "2.2" % "provided" // Provided by container
 
-  private val springWeb = "org.springframework" % "spring-web" % "3.2.1.RELEASE" % "compile"
-  private val springMvc = "org.springframework" % "spring-webmvc" % "3.2.1.RELEASE" % "compile"
+  private val springWeb = "org.springframework" % "spring-web" % "3.2.6.RELEASE" % "compile"
+  private val springMvc = "org.springframework" % "spring-webmvc" % "3.2.6.RELEASE" % "compile"
 
   private val commonsIo = "commons-io" % "commons-io" % "2.4" % "compile"
 
@@ -80,7 +78,7 @@ object Spring extends Build {
   */
 
   private val aName = "kolich-spring"
-  private val aVer = "0.0.7"
+  private val aVer = "0.0.8"
   private val aOrg = "com.kolich"
 
   lazy val spring: Project = Project(
@@ -152,7 +150,7 @@ object Spring extends Build {
         file("dist") / "test" / defaultPath.getName
       },
       libraryDependencies ++= deps,
-      retrieveManaged := true) ++
+      retrieveManaged := true)/* ++
       Seq(EclipseKeys.createSrc := EclipseCreateSrc.Default,
         // Make sure SBT also fetches/loads the "src" (source) JAR's for
         // all declared dependencies.
@@ -172,6 +170,6 @@ object Spring extends Build {
             }
             rule.success
           }
-        })*/))
+        })*/)*/)
 
 }
