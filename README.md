@@ -55,15 +55,15 @@ Run SBT from within kolich-spring.
     #~> cd kolich-spring
     #~/kolich-spring> sbt
     ...
-    kolich-spring:0.0.6>
+    kolich-spring:0.0.8>
 
 You will see a `kolich-spring` SBT prompt once all dependencies are resolved and the project is loaded.
 
 In SBT, run `package` to compile and package the JAR.
 
-    kolich-spring:0.0.6> package
+    kolich-spring:0.0.8> package
     [info] Compiling 17 Java sources to ~/kolich-spring/target/classes...
-    [info] Packaging ~/kolich-spring/dist/kolich-spring-0.0.6.jar ...
+    [info] Packaging ~/kolich-spring/dist/kolich-spring-0.0.8.jar ...
     [info] Done packaging.
     [success] Total time: 4 s, completed
 
